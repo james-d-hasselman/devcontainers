@@ -1,0 +1,7 @@
+{
+    "name": "Tauri 2.0 Application",
+    "dockerComposeFile": "docker-compose.yaml",
+    "service": "tauri-devcontainer",
+    "workspaceFolder": "/home/tauri/${localWorkspaceFolderBasename}",
+    "initializeCommand": "bash .devcontainer/createEnvironmentFile.sh ${templateOption:rustVersion} ${templateOption:nvmVersion} ${templateOption:nodeVersion}"
+}

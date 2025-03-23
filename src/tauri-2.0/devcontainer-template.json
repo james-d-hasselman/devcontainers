@@ -1,0 +1,32 @@
+{
+    "id": "tauri-2.0",
+    "version": "0.0.1-alpha",
+    "name": "Tauri 2.0 Application",
+    "description": "A template for desktop application development with Tauri 2.0",
+    "options": {
+        "rustVersion": {
+            "type": "string",
+            "description": "Rust version",
+            "proposals": [
+                "1.85"
+            ],
+            "default": "1.85"
+        },
+        "nvmVersion": {
+            "type": "string",
+            "description": "NVM version to install",
+            "proposals": [
+                "v0.40.2"
+            ],
+            "default": "v0.40.2"
+        },
+        "nodeVersion": {
+            "type": "string",
+            "description": "Node version to install",
+            "proposals": [
+                "22",
+            ],
+            "default": "22"
+        }
+    }
+}

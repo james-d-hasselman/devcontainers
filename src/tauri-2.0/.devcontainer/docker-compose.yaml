@@ -1,0 +1,22 @@
+services:
+  tauri-devcontainer:
+    container_name: tauri-devcontainer
+    build:
+      dockerfile: Dockerfile
+      args:
+        RUST_VERSION: ${RUST_VERSION} # Rust Docker container version https://hub.docker.com/_/rust 
+        NVM_VERSION: ${NVM_VERSION} # NVM version tag https://github.com/nvm-sh/nvm/releases
+        NODE_VERSION: ${NODE_VERSION} # Node.js major version https://nodejs.org/en
+        USER_ID: ${USER_ID}
+    devices:
+      - /dev/dri:/dev/dri
+    volumes:
+      - ..:/home/tauri/workspaces # Mount the directory containing your project
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /run/user/${USER_ID}/at-spi:/run/user/${USER_ID}/at-spi
+    environment:
+      DISPLAY: ${DISPLAY}
+    group_add:
+      - ${VIDEO_GROUP} # video
+      - ${RENDER_GROUP} # render
+    command: sleep infinity
