@@ -7,3 +7,4 @@ echo "NVM_VERSION=${2}" >> .env
 echo "NODE_VERSION=${3}" >> .env
 echo "VIDEO_GROUP=${VIDEO_GROUP}" >> .env
 echo "RENDER_GROUP=${RENDER_GROUP}" >> .env
+echo "USER_ID=$(id -u)" >> .env
