@@ -1,6 +1,6 @@
 {
     "id": "tauri-2.0",
-    "version": "0.0.2-alpha",
+    "version": "0.0.3-alpha",
     "name": "Tauri 2.0 Application",
     "description": "A template for desktop application development with Tauri 2.0",
     "options": {
