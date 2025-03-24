@@ -11,7 +11,7 @@ services:
     devices:
       - /dev/dri:/dev/dri
     volumes:
-      - ..:/home/tauri/workspaces # Mount the directory containing your project
+      - ..:/home/tauri/workspace # Mount the directory containing your project
       - /tmp/.X11-unix:/tmp/.X11-unix
       - /run/user/${USER_ID}/at-spi:/run/user/${USER_ID}/at-spi
     environment:

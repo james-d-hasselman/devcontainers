@@ -28,6 +28,8 @@ USER tauri
 
 WORKDIR /home/tauri
 
+RUN mkdir workspace
+
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/${NVM_VERSION}/install.sh | bash
 
 ENV NVM_DIR=/home/tauri/.nvm

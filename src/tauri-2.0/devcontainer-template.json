@@ -1,6 +1,6 @@
 {
     "id": "tauri-2.0",
-    "version": "0.0.3-alpha",
+    "version": "0.0.4-alpha",
     "name": "Tauri 2.0 Application",
     "description": "A template for desktop application development with Tauri 2.0",
     "options": {
@@ -24,7 +24,7 @@
             "type": "string",
             "description": "Node version to install",
             "proposals": [
-                "22",
+                "22"
             ],
             "default": "22"
         }
